@@ -16,7 +16,7 @@ public class ArachiPlaceholderButton extends Button {
     }
 
     @Override
-    public void clicked(Player player, Menu menu, int slot, ClickType clickType, int hotbarButton) {
+    public void clicked(Player player, Menu menu, ClickType clickType, ItemStack clickedItem, int hotbarButton, int slot) {
 
     }
 

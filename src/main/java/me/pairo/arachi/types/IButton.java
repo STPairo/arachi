@@ -9,6 +9,6 @@ public interface IButton {
 
     ItemStack getItem();
 
-    void clicked(Player player, Menu menu, int slot, ClickType clickType, int hotbarButton);
+    void clicked(Player player, Menu menu, ClickType clickType, ItemStack clickedItem, int hotbarButton, int slot);
 
 }

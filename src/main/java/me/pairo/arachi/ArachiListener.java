@@ -25,7 +25,7 @@ public class ArachiListener implements Listener {
         // If the slot clicked in the event corresponds to an actual button of the menu (and not to a placeholder).
         if (openMenu.getMenuButtons().containsKey(event.getSlot())) {
             Button button = openMenu.getMenuButtons().get(event.getSlot());
-            button.clicked(player, openMenu, event.getSlot(), event.getClick(), event.getHotbarButton());
+            button.clicked(player, openMenu, event.getClick(), event.getCurrentItem(), event.getHotbarButton(), event.getSlot());
         }
 
     }
