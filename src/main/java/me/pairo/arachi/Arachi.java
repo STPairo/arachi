@@ -1,7 +1,8 @@
 package me.pairo.arachi;
 
 import lombok.Getter;
-import me.pairo.arachi.types.impl.Menu;
+import me.pairo.arachi.menu.listener.MenuListener;
+import me.pairo.arachi.menu.impl.Menu;
 import org.bukkit.Bukkit;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,7 +17,7 @@ public class Arachi {
     @Getter
     private final JavaPlugin plugin;
     public static final HashMap<UUID, Menu> OPEN_MENUS = new HashMap<>();
-    private static final List<ClickType> FORBIDDEN_CLICK_TYPES = List.of(
+    public static final List<ClickType> FORBIDDEN_CLICK_TYPES = List.of(
             ClickType.SHIFT_LEFT,
             ClickType.SHIFT_RIGHT,
             ClickType.DROP,
@@ -27,7 +28,7 @@ public class Arachi {
     public Arachi(JavaPlugin plugin) {
         instance = this;
         this.plugin = plugin;
-        Bukkit.getPluginManager().registerEvents(new ArachiListener(), plugin);
+        Bukkit.getPluginManager().registerEvents(new MenuListener(), plugin);
     }
 
     public static Arachi get() {

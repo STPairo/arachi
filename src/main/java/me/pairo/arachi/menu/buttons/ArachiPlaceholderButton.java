@@ -1,8 +1,8 @@
-package me.pairo.arachi.buttons;
+package me.pairo.arachi.menu.buttons;
 
-import me.pairo.arachi.types.impl.Button;
-import me.pairo.arachi.types.impl.Menu;
-import me.pairo.arachi.util.Item;
+import me.pairo.arachi.menu.impl.Button;
+import me.pairo.arachi.menu.impl.Menu;
+import me.pairo.arachi.util.item.Item;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;

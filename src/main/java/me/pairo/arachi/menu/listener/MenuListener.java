@@ -1,7 +1,8 @@
-package me.pairo.arachi;
+package me.pairo.arachi.menu.listener;
 
-import me.pairo.arachi.types.impl.Button;
-import me.pairo.arachi.types.impl.Menu;
+import me.pairo.arachi.Arachi;
+import me.pairo.arachi.menu.impl.Button;
+import me.pairo.arachi.menu.impl.Menu;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -10,7 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 
-public class ArachiListener implements Listener {
+public class MenuListener implements Listener {
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void onInventoryClick(InventoryClickEvent event) {

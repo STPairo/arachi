@@ -1,6 +1,6 @@
-package me.pairo.arachi.types.impl;
+package me.pairo.arachi.menu.impl;
 
-import me.pairo.arachi.types.IButton;
+import me.pairo.arachi.menu.IButton;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 

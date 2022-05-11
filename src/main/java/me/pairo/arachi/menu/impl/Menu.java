@@ -1,8 +1,8 @@
-package me.pairo.arachi.types.impl;
+package me.pairo.arachi.menu.impl;
 
 import me.pairo.arachi.Arachi;
-import me.pairo.arachi.buttons.ArachiPlaceholderButton;
-import me.pairo.arachi.types.IMenu;
+import me.pairo.arachi.menu.buttons.ArachiPlaceholderButton;
+import me.pairo.arachi.menu.IMenu;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
@@ -31,7 +31,8 @@ public abstract class Menu implements IMenu {
 
         // Fill the inventory with the buttons and the placeholders.
         this.addAllButtons(inventory);
-        this.fillWithPlaceholders(inventory);
+        if (this.allowsPlaceholders)
+            this.fillWithPlaceholders(inventory);
 
         // Add this inventory to the currently open menus and open it.
         Arachi.OPEN_MENUS.put(player.getUniqueId(), this);

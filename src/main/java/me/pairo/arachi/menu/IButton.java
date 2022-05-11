@@ -1,6 +1,6 @@
-package me.pairo.arachi.types;
+package me.pairo.arachi.menu;
 
-import me.pairo.arachi.types.impl.Menu;
+import me.pairo.arachi.menu.impl.Menu;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemStack;

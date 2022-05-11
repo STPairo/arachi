@@ -1,5 +1,6 @@
-package me.pairo.arachi.util;
+package me.pairo.arachi.util.item;
 
+import me.pairo.arachi.util.Color;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
@@ -28,7 +29,7 @@ public class Item {
     public Item setName(String name) {
         ItemMeta meta = item.getItemMeta();
         if (meta == null) return this;
-        meta.setDisplayName(new Colorizer(name).colorize('&').toString());
+        meta.setDisplayName(Color.fmt(name));
         item.setItemMeta(meta);
         return this;
     }
@@ -59,7 +60,7 @@ public class Item {
         if (meta == null) return this;
 
         List<String> loreLines= new ArrayList<>();
-        Arrays.stream(lore).forEach(s -> loreLines.add(new Colorizer(s).colorize('&').toString()));
+        Arrays.stream(lore).forEach(s -> loreLines.add(Color.fmt(s)));
 
         meta.setLore(loreLines);
         item.setItemMeta(meta);

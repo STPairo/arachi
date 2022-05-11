@@ -1,6 +1,6 @@
-package me.pairo.arachi.types;
+package me.pairo.arachi.menu;
 
-import me.pairo.arachi.types.impl.Button;
+import me.pairo.arachi.menu.impl.Button;
 
 import java.util.Map;
 
