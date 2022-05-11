@@ -11,7 +11,6 @@ import org.bukkit.inventory.ItemStack;
 import java.util.Map;
 
 public abstract class Menu implements IMenu {
-    private boolean allowsPlaceholders = true;
     private Button placeholderButton = new ArachiPlaceholderButton();
 
     public void open(Player player) {
@@ -31,7 +30,7 @@ public abstract class Menu implements IMenu {
 
         // Fill the inventory with the buttons and the placeholders.
         this.addAllButtons(inventory);
-        if (this.allowsPlaceholders)
+        if (this.isAllowingPlaceholders())
             this.fillWithPlaceholders(inventory);
 
         // Add this inventory to the currently open menus and open it.
@@ -53,7 +52,7 @@ public abstract class Menu implements IMenu {
     }
 
     private void fillWithPlaceholders(Inventory inventory) {
-        if (!this.allowsPlaceholders) return;
+        if (!this.isAllowingPlaceholders()) return;
         for (int index = 0; index < inventory.getSize(); index++) {
             if (this.getMenuButtons().get(index) != null) continue;
             this.getMenuButtons().put(index, this.placeholderButton);

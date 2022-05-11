@@ -8,6 +8,10 @@ public interface IMenu {
 
     String getTitle();
 
+    void setAllowingPlaceholders(boolean allowsPlaceholders);
+
+    boolean isAllowingPlaceholders();
+
     void setPersistent(boolean persistent);
 
     boolean isPersistent();

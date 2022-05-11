@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d8838a0-bafa-42ce-8dcc-aca2268506b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/util/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/util/item/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/Arachi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/Arachi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/ArachiListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/menu/listener/MenuListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/buttons/ArachiExitButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/menu/buttons/ArachiExitButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/buttons/ArachiPlaceholderButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/menu/buttons/ArachiPlaceholderButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/types/IButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/menu/IButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/types/IMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/menu/IMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/types/impl/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/menu/impl/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/types/impl/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/menu/impl/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/util/Colorizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/util/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/pairo/arachi/util/item/Item.java" afterDir="false" />
-    </list>
+    <list default="true" id="6d8838a0-bafa-42ce-8dcc-aca2268506b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
